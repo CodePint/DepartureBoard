@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data-set xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <record>
+        <flight>SI350</flight>
+        <destination>Southampton</destination> 
+        <std>12:00</std>    
+        <status>Gate info at 11:20</status>
+    </record>
+    <record>
+        <flight>SI1234</flight>
+        <destination>Southampton</destination> 
+        <std>13:10</std>    
+        <status>Delayed</status>
+    </record>
+    <record>
+        <flight>BA6969</flight>
+        <destination>London Gatwick</destination> 
+        <std>16:45</std>    
+        <status> </status>
+    </record>
+    <record>
+        <flight>EZY8746</flight>
+        <destination>London Gatwick</destination> 
+        <std>17:00</std>    
+        <status>See EasyJet app for info</status>
+    </record>
+    <record>
+        <flight>BA6971</flight>
+        <destination>London Gatwick</destination> 
+        <std>17:15</std>    
+        <status> </status>
+    </record>
+    <record>
+        <flight>SI1267</flight>
+        <destination>Southampton</destination> 
+        <std>17:55</std>    
+        <status>Cancelled</status>
+    </record>
+</data-set>

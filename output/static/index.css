@@ -1,0 +1,172 @@
+/* css reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 62.5%;
+  font-family: 'Calibri', 'Open Sans', 'Trebuchet MS';
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+ul, li {
+  list-style: none;
+  font-family: 'Barlow', sans-serif;
+}
+
+h1   {
+  font-size: 3.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+/* page and header style */
+
+.content {
+  height: 100%;
+  min-height: 100vh;
+  overflow: auto;
+  font-size: calc(1rem + 0.5vw + 0.25vh);
+}
+
+.departures-page {
+  background-color: #323232;
+  min-height: 100vh;
+  font-size: 1em;
+  color: white; 
+}
+
+.departures-page header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  margin: 0 auto;
+}
+
+.departures-page header .logo {
+  width: 10vw;
+  height: 70%;
+  margin-right: 1em;
+}
+
+.departures-page header img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.departures-page header h1 {
+  flex-grow: 0;
+  display: flex;
+  height: 70%;
+  text-align: center;
+  align-items: flex-end;
+}
+
+/* tables syles */
+
+table.departures {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+table.departures thead th:nth-child(1) {
+  width: 20%;
+}
+
+table.departures thead th:nth-child(2) {
+  width: 30%;
+}
+
+table.departures thead th:nth-child(3) {
+  width: 15%;
+}
+
+table.departures th,
+table.departures td{
+  padding: 0.5em
+}  
+
+table.departures thead th    {
+  text-align: left;
+  background: #646464;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.cancelled {
+  color: red;
+}
+
+tr:nth-child(even) {
+  background-color: #414141;
+}
+
+/* footer styles */
+
+footer  {
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  color: white; 
+  background-color: #646464;
+  padding: 0.5em;
+  text-align: center;
+}
+
+
+/* Media Queries */
+
+/* small tablet portrait */
+@media only screen and (min-width: 767px) {
+  table.departures { 
+    font-size: 1.1em;
+  }
+}
+
+/* large tablet portrait */
+@media only screen and (min-width: 1020px) {
+  .table.departures { 
+    font-size: 1.2em;
+  }
+}
+
+/* small tablet landscape */
+@media only screen and (min-width: 1020px) and (orientation: landscape) {
+  .departures-page header {
+    height: 15vh;
+  }
+  
+  .content {
+    font-size: calc(1.5rem + 0.25vw);
+  }
+
+  .table.departures { 
+    font-size: 1em;
+  }
+
+}
+
+/* large tablet landscape and desktop */
+@media only screen and (min-width: 1366px) and (orientation: landscape) {
+  table.departures th,
+  table.departures td{
+    padding: 0.5em 0.75em
+  }  
+  
+}
